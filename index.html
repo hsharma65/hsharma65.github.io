@@ -85,24 +85,22 @@
         ga('send', 'pageview');
       </script>
 
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1216158575098571',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '120228908080079',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
+  
+  (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.group.js#xfbml=1&version=v2.11&appId='120228908080079';
+  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+</script>
 
     <div class="offcanvas-wrapper" id="top">
 
@@ -745,6 +743,7 @@
   </div>
 </div>
 
+    <div class="fb-group" data-href="https://www.facebook.com/groups/bayareacricket/"></div>
 
 
 
