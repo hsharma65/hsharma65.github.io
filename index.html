@@ -4,7 +4,13 @@
    </head>
    <body>
       <script>
-
+         window.fbAsyncInit = function() {	
+           FB.init({	
+             appId      : '120228908080079',	
+             xfbml      : true,	
+             version    : 'v2.11'	
+           });	
+         };
          (function(d, s, id){
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
